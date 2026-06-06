@@ -62,6 +62,7 @@
 
   <h3>PID Control</h3>
   <p>We used Kp = 1, Ki = 0.01, Kd = 0.01</p>
+  <p>PID is a method for controlling how a system reacts based on feedback like an error value. The P represents the proportional reaction, where the reaction is proportional to the error value. In our case, the further off from center the line was, the more the robot turned. The I in PID represents integral. This part of PID control uses the accumulation of past error to adjust the reaction. A larger accumulated error means a larger reaction. The D in PID represents derivative. The rate of change from two error readings impacts how much of a reaction there is, where a higher rate of change means a higher reaction. For the most part, we only changed the proportional part of PID except for during the frequency sweep, as well as some D. For the drag race, the goal was to maintain a high speed with a medium P. The P was somewhat low relative to the speed, since the curves were gradual. For the loop competition, we had a slower speed, as well as a medium P. The loop had somewhat tight curves, so the goal was for P to be large enough that the robot turned with the line, but not too high that the robot turned too fast and oscillated too much. For the frequency sweep, we used slow speed and a medium P. We wanted to follow the track, so a slow speed was important to follow tighter curves without understeering.</p>
 
   <h3>Poster</h3>
   <img src="images/Team Amaze.png" 
@@ -88,8 +89,8 @@
     </figcaption>
 
   <h3>Improvements</h3>
-  <p>During the last week, we ...</p>
-  <p>Some future improvements we plan to make include ...</p>
+  <p>In the seven days before the competition, some changes to the robot included redesigning the chassis, such as removing some plastic around the wheel to help prevent the possibility of the wheel rubbing against the frame, redesigning the motor retention system with tighter tolerances and fewer pieces so the motors were less likely to get out of place, using tape to make the wires neater, and plugging in the holes in the photoresistor protoboard to reduce outside light. We also changed the code, as the new code uses a system to get back on the track if it loses the line by turning to the side the line was last seen.</p>
+  <p>Some future improvements we plan to make include making the chassis even better, with places to mount all of the components to prevent them from moving, and to achieve a decent weight distribution and neatness. For the code, something that could have been improved would be having a way to calibrate the motor speeds based on the PWM signal. The motors seemed to have different PWM that made them start spinning, so by making a map of PWM to motor speed for each motor, that might help the robot do what we tell it to do and have the wheels move at the correct speeds relative to each other.</p>
 
 </body>
 </html>
